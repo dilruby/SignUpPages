@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="1" time="29.619" errors="1" skipped="0" tests="16" name="core.SignUp_PagesTest">
+<testsuite failures="0" time="38.945" errors="0" skipped="3" tests="16" name="core.SignUp_PagesTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib"/>
@@ -62,98 +62,26 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="1.219" classname="core.SignUp_PagesTest" name="test_01_verifyTitle"/>
-  <testcase time="0.316" classname="core.SignUp_PagesTest" name="test_02_verifyAppTitle"/>
-  <testcase time="2.687" classname="core.SignUp_PagesTest" name="test_03_verifyFacebookLink"/>
-  <testcase time="3.254" classname="core.SignUp_PagesTest" name="test_04_verifyTwitterLink"/>
-  <testcase time="8.928" classname="core.SignUp_PagesTest" name="test_05_verifyFlickrLink"/>
-  <testcase time="3.789" classname="core.SignUp_PagesTest" name="test_06_verifyYoutubeLink"/>
-  <testcase time="0.346" classname="core.SignUp_PagesTest" name="test_07_verifyErrorHandlingFirstName">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at core.SignUp_Page.verifyErrorHandling(SignUp_Page.java:94)
-	at core.SignUp_PagesTest.test_07_verifyErrorHandlingFirstName(SignUp_PagesTest.java:119)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
+  <testcase time="1.407" classname="core.SignUp_PagesTest" name="test_01_verifyTitle"/>
+  <testcase time="0.888" classname="core.SignUp_PagesTest" name="test_02_verifyAppTitle"/>
+  <testcase time="3.991" classname="core.SignUp_PagesTest" name="test_03_verifyFacebookLink"/>
+  <testcase time="6.48" classname="core.SignUp_PagesTest" name="test_04_verifyTwitterLink"/>
+  <testcase time="4.381" classname="core.SignUp_PagesTest" name="test_05_verifyFlickrLink"/>
+  <testcase time="2.969" classname="core.SignUp_PagesTest" name="test_06_verifyYoutubeLink"/>
+  <testcase time="0.34" classname="core.SignUp_PagesTest" name="test_07_verifyErrorHandlingFirstName"/>
+  <testcase time="0.294" classname="core.SignUp_PagesTest" name="test_08_verifyErrorHandlingLastName"/>
+  <testcase time="0.27" classname="core.SignUp_PagesTest" name="test_09_verifyErrorHandlingEmail"/>
+  <testcase time="0.319" classname="core.SignUp_PagesTest" name="test_10_verifyErrorHandlingPhoneNumber"/>
+  <testcase time="3.641" classname="core.SignUp_PagesTest" name="test_11_verifySubmitForm"/>
+  <testcase time="3.641" classname="core.SignUp_PagesTest" name="test_12_verifyCurrentCityState">
+    <skipped/>
   </testcase>
-  <testcase time="0.298" classname="core.SignUp_PagesTest" name="test_08_verifyErrorHandlingLastName"/>
-  <testcase time="0.299" classname="core.SignUp_PagesTest" name="test_09_verifyErrorHandlingEmail"/>
-  <testcase time="0.332" classname="core.SignUp_PagesTest" name="test_10_verifyErrorHandlingPhoneNumber"/>
-  <testcase time="2.06" classname="core.SignUp_PagesTest" name="test_11_verifySubmitForm"/>
-  <testcase time="3.237" classname="core.SignUp_PagesTest" name="test_12_verifyCurrentCityState"/>
-  <testcase time="0.612" classname="core.SignUp_PagesTest" name="test_13_verifyCurrentWeather">
-    <failure message="expected:&lt;[partlycloudy].gif&gt; but was:&lt;[clear].gif&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[partlycloudy].gif&gt; but was:&lt;[clear].gif&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at core.SignUp_Page.verifyCurrentWeather(SignUp_Page.java:197)
-	at core.SignUp_PagesTest.test_13_verifyCurrentWeather(SignUp_PagesTest.java:155)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</failure>
+  <testcase time="3.641" classname="core.SignUp_PagesTest" name="test_13_verifyCurrentWeather">
+    <skipped/>
   </testcase>
-  <testcase time="0.622" classname="core.SignUp_PagesTest" name="test_14_verifyCurrentTemperature"/>
-  <testcase time="1.571" classname="core.SignUp_PagesTest" name="test_15_verifyBackButton"/>
-  <testcase time="0.049" classname="core.SignUp_PagesTest" name="test_16_verifyCopyright"/>
+  <testcase time="3.641" classname="core.SignUp_PagesTest" name="test_14_verifyCurrentTemperature">
+    <skipped/>
+  </testcase>
+  <testcase time="3.001" classname="core.SignUp_PagesTest" name="test_15_verifyBackButton"/>
+  <testcase time="0.041" classname="core.SignUp_PagesTest" name="test_16_verifyCopyright"/>
 </testsuite>

@@ -14,16 +14,15 @@ public class Confirmation_Page {
 	public Confirmation_Page(WebDriver wd) {
 		driver = wd;
 	}
-
 	// method to open page
-	public void launchBrowser(String url) {
-		driver.get(url);
-	} // launchBrowser
-
-	// method to click on Submit button
-	public void clickSubmit() {
-		driver.findElement(By.id("id_submit_button")).click();
-	} // clickSubmit
+			public void launchBrowser(String url) {
+				driver.get(url);
+			}
+			
+			// method to click on Submit button
+			public void clickSubmit() {
+				driver.findElement(By.id("id_submit_button")).click();
+			} 
 
 	// method to submit form
 	public void submitForm(String fname, String lname, String email, String phone, String gender, String state,

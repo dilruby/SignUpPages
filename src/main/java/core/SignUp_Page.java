@@ -25,11 +25,16 @@ public class SignUp_Page {
 	public SignUp_Page(WebDriver wd) {
 		driver = wd;
 	}
-
 	// method to open page
-	public void launchBrowser(String url) {
-		driver.get(url);
-	}
+				public void launchBrowser(String url) {
+					driver.get(url);
+				}
+				
+				// method to click on Submit button
+				public void clickSubmit() {
+					driver.findElement(By.id("id_submit_button")).click();
+				} 
+	
 
 	// method for title validation
 	public void verifyTitle(String titleExpected, String url) {
@@ -58,11 +63,7 @@ public class SignUp_Page {
 		driver.switchTo().window(allTabs.get(0));
 		assertEquals(titleLinkExpected, titleLinkActual);
 	} // verify_link
-
-	// method to click on Submit button
-	public void clickSubmit() {
-		driver.findElement(By.id("id_submit_button")).click();
-	} // clickSubmit
+	
 
 	// method for quote validation
 	public boolean verifyQuote() {
@@ -78,8 +79,7 @@ public class SignUp_Page {
 	} // verify_quote
 
 	// method for error handling
-	public void verifyErrorHandling(String fname, String lname, String email, String phone, String errorExpected,
-			String url) {
+	public void verifyErrorHandling(String fname, String lname, String email, String phone, String errorExpected) {
 
 		driver.findElement(By.id("id_fname")).clear();
 		driver.findElement(By.id("id_fname")).sendKeys(fname);
@@ -91,10 +91,10 @@ public class SignUp_Page {
 
 		clickSubmit();
 		
-		if (fname.matches("/^[a-zA-Z,.'-]{3,30}$/")) {
-			if (lname.matches("/^[a-zA-Z,.'-]{3,30}$/")) {
-				if (email.matches("/[a-zA-Z0-9]{2,}@([0-9a-zA-Z][-\\w]*\\.)+[a-zA-Z]{2,6}/")) {
-					if (phone.matches("/^\\(?[\\d]{3}\\)?[\\s-]?[\\d]{3}[\\s-]?[\\d]{4}$/")) {
+		if (fname.matches("^[a-zA-Z,.'-]{3,30}$")) {
+			if (lname.matches("^[a-zA-Z,.'-]{3,30}$")) {
+				if (email.matches("[a-zA-Z0-9]{2,}@([0-9a-zA-Z][-\\w]*\\.)+[a-zA-Z]{2,6}")) {
+					if (phone.matches("^\\(?[\\d]{3}\\)?[\\s-]?[\\d]{3}[\\s-]?[\\d]{4}$")) {
 					} else {
 						String errorActual = driver.findElement(By.id("ErrorLine")).getText();
 						assertEquals(errorExpected, errorActual);
@@ -215,11 +215,11 @@ public class SignUp_Page {
 		String temp_expected = driver.findElement(By.id("id_temperature")).getText();
 		assertEquals(temp_expected, temp_actual);
 	} // verifyTemperature
-	
-	public void verifyCopyright(String copyrightExpected){
-	driver.findElement(By.id("copyright")).getText();
-	String copyrightActual = driver.findElement(By.id("copyright")).getText();
-	assertEquals (copyrightExpected,copyrightActual);
-	}
-
+		
+	// method to verify copyright
+			public void verifyCopyright(String copyrightExpected){
+				driver.findElement(By.id("copyright")).getText();
+				String copyrightActual = driver.findElement(By.id("copyright")).getText();
+				assertEquals (copyrightExpected,copyrightActual);
+				}
 }
